@@ -1,0 +1,11 @@
+[Unit]
+Description=Check and install etherwake if missing at boot
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/root/check_etherwake.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
