@@ -1,11 +1,10 @@
 [Unit]
-Description=Check if crontab is installed if not it is ran
-After=network-online.target
+Description= cron tab script verifier
+After=cron.service
 
 [Service]
 Type=oneshot
 ExecStart=/root/verfi_cron.sh
-RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
