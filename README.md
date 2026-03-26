@@ -3,6 +3,8 @@ The scripts purpose is to install wakeonlan on a UCG router.
 Steps for Installing
 Edit the addmacs.sh file via Notepad and adjust the line for server ip and kiosk ip as seen below. If there's more then one device just add another line in the next to the last device. Then save to the same file. 
 
+Install Putty and login to the UCG Router
+
 Run the below commands 
 - sudo add-apt-repository ppa:git-core/ppa
 - sudo apt update; sudo apt install git
