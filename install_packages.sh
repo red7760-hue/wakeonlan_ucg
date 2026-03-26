@@ -1,6 +1,6 @@
 # List of applications to install
 REQUIRED_PKGS=("nano" "etherwake")
-sudo apt-update
+sudo apt update
 
 # Function to check and install a package
 install_package() {

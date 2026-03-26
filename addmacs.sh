@@ -1,19 +1,11 @@
 #!/bin/bash
 # Check if etherwake is installed, install if missing
-if ! command -v etherwake &> /dev/null && [ ! -f /usr/sbin/etherwake ]; then
-    echo "$(date): etherwake not found. Attempting to install..."
-    if apt-get install -y etherwake; then
-        echo "$(date): etherwake installed successfully."
-    else
-        echo "$(date): ERROR - Failed to install etherwake. Exiting."
-        exit 1
-    fi
-fi
 
 declare -A DEVICES=(
-    ["10.10.8.8"]="D4:A2:CD:B8:1B:83"
-    ["10.10.8.26"]="E8:CF:83:23:0D:E8"
+    ["10.10.8.11"]="D4:A2:CD:BA:6F:60"
+    ["10.10.8.12"]="E8:CF:83:25:03:C2"
 )
+
 #go through each device added in prev lines
 for IP in "${!DEVICES[@]}"; do
     MAC="${DEVICES[$IP]}"
