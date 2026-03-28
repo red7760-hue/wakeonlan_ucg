@@ -1,5 +1,5 @@
 The scripts purpose is to install wakeonlan on a UCG router. It does the below tasks some of these were added due to updates on the UCG removing crontab -e and etherwake dependencies.
-- It Pings the devices added to the addmac.sh file.
+- It pings the devices added to the addmac.sh file.
 - If the pings fail to these devices it crosschecks the mac address added in the addmac.sh file as well.
 - If the ARP check is successful a etherwake packet is not sent if the ARP check is not successful it sends a etherwake packet.
 - In the crontab its set to ping and check the arp table for the devices in the addmac.sh file every 1 minute. This can be adjusted in crontab -e as needed.
