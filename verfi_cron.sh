@@ -2,7 +2,7 @@
 # ─── CONFIGURATION ──
 CRON_JOBS=(
     "* * * * * /root/addmacs.sh >> /var/log/wol_check.log 2>&1"
-    "0 6 * * * apt update && apt install -y etherwake"
+    "0 6 * * * apt update && apt install -y etherwake >> /var/log/etherwake_install.log 2>&1"
 )
  
 check_and_add_cron() {
