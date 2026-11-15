@@ -18,7 +18,8 @@ Run the below commands
 - sudo -s
 - chmod +x rapper.sh
 - ./rapper.sh
-<img width="1156" height="656" alt="image" src="https://github.com/user-attachments/assets/2fdeb9b7-cbee-4083-998d-754f1f1e01df" />
+<img width="1156" height="656" alt="WaMz8wUqDJ0hFUfYrj3Qr1kt2nS0fw0SXQ" src="https://github.com/user-attachments/assets/c4034c1d-12a2-45de-8d3f-67f75bf16ab5" />
+
 
 Wait one minute and confirm this was all ran correctly run the below command to check the logs 
 - cat /var/log/wol_check.log 
