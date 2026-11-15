@@ -15,8 +15,10 @@ Run the below commands
 - mv wakeonlan_ucg/* wakeonlan_ucg/.[!.]* /root/
 - If installing via github - Dont forget to edit the addmac file for the devices you want to wake up - edit the IP and Mac for the specified devices.
   ![notepad++_6I0ZBDHmtI](https://github.com/user-attachments/assets/60b07478-23f3-4b4d-a3fc-95e810cf2b3f)
+- sudo -s
+- chmod +x rapper.sh
 - ./rapper.sh
-
+<img width="1156" height="656" alt="image" src="https://github.com/user-attachments/assets/2fdeb9b7-cbee-4083-998d-754f1f1e01df" />
 
 Wait one minute and confirm this was all ran correctly run the below command to check the logs 
 - cat /var/log/wol_check.log 
